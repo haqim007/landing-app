@@ -1,0 +1,628 @@
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "fonts";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+.section-one,
+.section-two {
+    background-color: #eebece;
+}
+
+.section-three {
+    // height: 1473px;
+    background-color: #000000;
+}
+
+.lego-1 {
+    background-image: url('../images/bitmap.png');
+    background-repeat: no-repeat;
+}
+
+.btn-go {
+    width: 231px;
+    height: 58px;
+    border-radius: 29px;
+    box-shadow: 0 20px 30px 0 rgba(249, 131, 171, 0.5);
+    background-color: #ffffff;
+    margin-top: 200px;
+
+    @include hover-focus {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+.lego-2 {
+    background-image: url('../images/group-4.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 158px;
+}
+
+.deffinition-a-pract {
+    font-family: "WorkSans-Medium";
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: right;
+    color: #000000;
+}
+
+.deffinition-a-pract .text-style-1 {
+    font-weight: bold;
+    color: #0b24fb;
+}
+
+.weekend-team {
+    font-family: 'WorkSans-SemiBoldItalic';
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+}
+
+.oval-1 {
+    background-image: url('../images/oval.png');
+    background-repeat: no-repeat;
+    width: 89px;
+    height: 89px;
+    object-fit: contain;
+    margin-top: 38px;
+}
+
+//testimonial
+.testimonial {
+    // position: absolute;
+    margin-top: -110px;
+}
+
+.testi-title {
+    width: 188px;
+    height: 38px;
+    text-shadow: 0 20px 30px rgba(249, 131, 171, 0.7);
+    font-family: 'WorkSans-Black';
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.arrow-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.slick-next {
+    margin-right: -25px;
+}
+
+.slick-prev {
+    transform: rotate(180deg);
+    top: 55px;
+    margin-left: -50px;
+
+    &:active {
+        transform: rotate(180deg);
+    }
+}
+
+.slick-next,
+.slick-prev {
+    &:active {
+        opacity: 0.5;
+        box-shadow: 0 5px rgb(24, 23, 23);
+    }
+}
+
+.content-box-div {
+    margin-top: 65px;
+}
+
+.content-box-title {
+    // width: 68px;
+    height: 38px;
+    font-family: "WorkSans-Black";
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--white);
+}
+
+.content-box {
+    font-family: "WorkSans";
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 30px;
+    width: 80%;
+}
+
+// helps and tips
+
+.help-tips {
+    background-image: url('../images/path-3.png');
+    background-repeat: no-repeat;
+    background-size: 159px 195px;
+    background-position-x: 88%;
+    margin-top: 100px
+}
+
+.ht-body-div {
+    height: 104px
+}
+
+.ht-text-div {
+    height: 72px;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.ht-text {
+    width: 218px;
+    height: 38px;
+    font-family: 'WorkSans-bold';
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.57px;
+    color: #ffffff;
+}
+
+.footer {
+    height: 67px;
+    background-color: #0b24fb;
+}
+
+.wknd-footer {
+    height: 19px;
+    font-family: 'WorkSans-bold';
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 24px;
+
+    .text-style-1 {
+        font-weight: normal;
+        font-family: 'WorkSans';
+    }
+
+}
+
+
+.version {
+
+    border-radius: 12px;
+    border: solid 1px #ffffff;
+
+    .text-style {
+        width: 123px;
+        height: 16px;
+        font-family: 'WorkSans-light';
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.yas-bg {
+    margin-top: 117px;
+    background-repeat: no-repeat;
+    background-size: 244px 325px;
+    background-image: url(../images/group-3@2x.png);
+}
+
+@media (min-width: 320px) {
+    .section-one {
+        background-image: url('../images/bg-1.svg');
+        background-position: -500px 0px;
+        background-repeat: no-repeat;
+    }
+
+    .section-two {
+        height: 648px;
+    }
+
+    .brand-icon {
+        margin: 10px -20px;
+    }
+
+    .work-from-home {
+        font-family: "WorkSans-Black";
+        font-size: 46px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.98;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        margin-top: 67px;
+    }
+
+    .stay-active-with-a-l {
+        height: 19px;
+        font-family: "WorkSans-SemiBoldItalic";
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .lego-1 {
+        height: 305px;
+        background-position: center;
+        margin-top: 30px;
+    }
+
+    .deffinition-a-pract {
+        height: 168px;
+        line-height: 1.5;
+        letter-spacing: -0.57px;
+        margin-top: 63px;
+        margin-bottom: 5px;
+    }
+
+    .weekend-team,
+    .deffinition-a-pract {
+        width: 311px;
+
+    }
+
+    .deffinition-a-pract {
+        margin-left: 0px;
+        font-size: 15px;
+    }
+
+    .weekend-team {
+        height: 19px;
+    }
+
+    .oval-1 {
+        margin-left: 15.2%;
+        background-size: 66px;
+    }
+
+    .testimonial {
+        width: 340px;
+        overflow: hidden;
+        margin-left: auto
+    }
+
+    .testi-title {
+        margin-left: 0px;
+    }
+
+    .content-box-div {
+        margin-left: -80px
+    }
+
+    .content-box-title {
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .content-box {
+        text-align: left;
+        height: 192px;
+        font-size: 16px;
+    }
+
+    .ht-div {
+        margin-bottom: 10px;
+        margin-left: 76px;
+        width: 350px;
+    }
+
+
+
+    .yas-bg {
+        background-position-y: 201px;
+        height: 78vh;
+        margin-left: -15px;
+    }
+
+    .yas-content {
+        margin-left: -60px;
+    }
+
+    .wknd-footer {
+        width: 74px;
+        font-size: 12px;
+        margin-left: 24px;
+    }
+
+    .version-div {
+        width: 94px;
+        margin-left: 159px;
+    }
+
+    .version {
+        width: 94px;
+        height: 18px;
+        margin-top: 20px;
+
+        .text-style {
+            font-size: 10px;
+            width: 94px;
+        }
+    }
+
+}
+
+@media (min-width: 360px) {
+    .section-one {
+        background-image: url('../images/bg-1.svg');
+        background-position: -500px 0px;
+        background-repeat: no-repeat;
+    }
+
+    .brand-icon {
+        margin: 10px -20px;
+    }
+
+    .work-from-home {
+        height: 102px;
+        font-family: "WorkSans-Black";
+        font-size: 52px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.98;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        margin-top: 67px;
+    }
+
+    .stay-active-with-a-l {
+        height: 19px;
+        font-family: "WorkSans-SemiBoldItalic";
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .lego-1 {
+        height: 305px;
+        background-position: center;
+    }
+
+    .weekend-team,
+    .deffinition-a-pract {
+        margin-left: 32px;
+        font-size: 16px;
+
+    }
+
+    .deffinition-a-pract {
+        margin-bottom: 20px;
+    }
+
+    .oval-1 {
+        background-size: auto;
+    }
+
+}
+
+
+@media (min-width: 992px) and (min-height: 500px) {
+    .section-one {
+        background-image: url('../images/bg-1.png');
+        background-position: 0px -66px;
+        background-repeat: no-repeat;
+        height: 665px;
+    }
+
+    .section-two {
+        height: 591px;
+    }
+
+    .section-three {
+        padding-left: 0px;
+    }
+
+    .brand-icon {
+        margin: 10px 63px;
+    }
+
+    .work-from-home {
+        text-align: center;
+        width: 721px;
+        height: 51px;
+        font-size: 62px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.82;
+        letter-spacing: normal;
+        color: var(--white);
+        font-family: "WorkSans-Black";
+        margin-top: 84px;
+    }
+
+    .stay-active-with-a-l {
+        width: 338px;
+        height: 25px;
+        font-family: "WorkSans-SemiBoldItalic";
+        font-size: 21px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .lego-1 {
+        height: 305px;
+        margin-top: 67px;
+    }
+
+    .weekend-team,
+    .deffinition-a-pract {
+        width: 619px;
+        margin-left: 25%;
+        font-size: 21px;
+    }
+
+    .deffinition-a-pract {
+        height: 160px;
+        line-height: 1.52;
+        letter-spacing: -0.75px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .weekend-team {
+        height: 25px;
+    }
+
+    .oval-1 {
+        margin-left: 283px;
+    }
+
+    .testimonial {
+        width: 621px;
+        margin: -110px 0 29px 315px;
+        overflow: visible;
+    }
+
+    .testi-title {
+        margin-left: 200px
+    }
+
+    .content-box-div {
+        margin-left: 143px;
+    }
+
+    .content-box-title {
+        text-align: center;
+        margin-left: 173px;
+    }
+
+    .content-box {
+        text-align: center;
+        height: 135px;
+        font-size: 18px;
+    }
+
+    .ht-div {
+        margin-left: auto;
+        width: auto;
+    }
+
+    .footer {
+        margin-top: -13px;
+    }
+
+    .yas-bg {
+        background-position-y: 0px;
+        height: 44vh;
+        margin-left: auto;
+    }
+
+    .yas-content {
+        margin-left: 136px;
+    }
+
+    .wknd-footer {
+        width: 98px;
+        font-size: 16px;
+        margin-left: 213px;
+    }
+
+    .version-div {
+        margin-left: 52.4%;
+    }
+
+    .version {
+        width: 130px;
+        height: 24px;
+        margin-top: 24px;
+
+        .text-style {
+            width: 123px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+@media (min-width: 992px) and (min-height: 732px) {
+    .section-one {
+        background-image: url('../images/bg-1@3x.png');
+        background-position: 0px -77px;
+        background-repeat: no-repeat;
+        background-size: 100% 111.5%;
+    }
+}
+
+.slick-slide div {
+    outline: none;
+}
+
+.card-2 {
+    box-shadow: 0 -10px 20px 0 rgba(249, 131, 171, 0.2);
+    width: 247px;
+    height: 140px;
+}
